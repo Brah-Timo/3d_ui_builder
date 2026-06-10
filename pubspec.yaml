@@ -1,0 +1,41 @@
+name: three_d_ui_builder
+description: >-
+  Build futuristic 3D UIs in Flutter with widgets like buttons, flipping cards, and cube containers using a simple Flutter-style API—no OpenGL required, works across iOS, Android, Web, and Desktop.
+
+version: 0.1.0
+homepage: https://github.com/Brah-Timo/3d_ui_builder
+repository: https://github.com/Brah-Timo/3d_ui_builder
+issue_tracker: https://github.com/Brah-Timo/3d_ui_builder/issues
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+topics:
+  - flutter
+  - ui-3d
+  - ui-components
+  - widgets
+  - animations
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core math — Vector3, Matrix4, Quaternion
+  vector_math: ^2.1.4
+
+  # Gyroscope / accelerometer sensor support for TiltCard
+  sensors_plus: ^5.0.0
+
+  # Efficient sorted collections (depth-sorting pass)
+  collection: ^1.18.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  mocktail: ^1.0.0
+
+flutter:
+  uses-material-design: true
